@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLB Viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        model-viewer {
+            width: 80vw;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer 
+        src="DB46_vp_armor.glb" 
+        ar 
+        auto-rotate 
+        camera-controls 
+        shadow-intensity="1">
+    </model-viewer>
+</body>
+</html>
